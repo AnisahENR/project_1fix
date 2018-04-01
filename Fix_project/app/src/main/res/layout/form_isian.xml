@@ -65,11 +65,12 @@
                 android:id="@+id/drop_kec"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="@color/color_a200"
                 android:entries="@array/kecamatan"
                 android:prompt="@string/kec"
                 android:inputType="text"
                 android:padding="10dp"
+                android:textColor="@color/black"
                 android:layout_marginBottom="15dp"
                 >
             </Spinner>
@@ -81,7 +82,7 @@
                 android:minLines="3"
                 android:maxLines="3"
                 android:ems="25"
-                android:hint="Ceritakan Masalahmu Disini"
+                android:hint="Masalah"
                 android:inputType="text|textMultiLine"
                 android:gravity="top"
                 android:textColor="@color/black"
@@ -109,7 +110,8 @@
                 android:text="KIRIM"
                 android:textSize="20sp"
                 android:textColor="@color/white"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"/>
         </LinearLayout>
     </ScrollView>
 
