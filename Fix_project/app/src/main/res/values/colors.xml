@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#860933</color>
+    <color name="CREAMY">#fff9ca</color>
+    <color name="color_a100">#FFD180</color>
+    <color name="color_a200">#ffab40</color>
+    <color name="color_a400">#ff9100</color>
+    <color name="color_a700">#ff6d00</color>
+    <color name="white">#ffffff</color>
+    <color name="abu2">#f5f1e3</color>
+    <color name="pink4">#B51436</color>
+    <color name="ungu_300">#ba68c8</color>
+    <color name="ungu_400">#ab47bc</color>
+</resources>
