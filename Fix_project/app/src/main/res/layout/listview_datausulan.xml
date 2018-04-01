@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical" >
+        <ImageView
+            android:id="@+id/item_drag_and_drop_social_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <com.csform.android.uiapptemplate.font.RobotoTextView
+                android:id="@+id/item_drag_and_drop_social_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="John Doe"
+                android:textColor="@colors/color_a100"
+                android:textSize="16sp"
+                app:typeface="robotoLight" />
+
+            <com.csform.android.uiapptemplate.font.RobotoTextView
+                android:id="@+id/item_drag_and_drop_social_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:text="from Las Vegas"
+                android:textColor="@colors/color_a100"
+                android:textSize="12sp"
+                app:typeface="robotoLight" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_a700" />
+
+</LinearLayout>
