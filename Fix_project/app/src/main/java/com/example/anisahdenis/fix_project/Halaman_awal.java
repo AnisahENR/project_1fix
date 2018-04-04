@@ -40,6 +40,9 @@ public class Halaman_awal extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent1);
                 break;
             case R.id.admin:
+                Intent intent2;
+                intent2 = new Intent(this, Admin_webview.class);
+                startActivity(intent2);
                 break;
             case  R.id.rating:
                 break;

@@ -146,7 +146,7 @@ public class TabActivity extends AppCompatActivity {
                 case 0 :
                     return new Form_isian();
                 case 1 :
-                    return new Form_isian();
+                    return new Data_usulan();
 //                case 2 :
 //                    return new Form_isian();
             }
