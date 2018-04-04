@@ -4,7 +4,7 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="kec">Kecamatan</string>
     <string-array name="kecamatan">
-
+        <item>Pilih Kecamatan</item>
         <item>BUGUL KIDUL</item>
         <item>GADINGREJO</item>
         <item>PANGGUNGREJO</item>
