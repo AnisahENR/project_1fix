@@ -30,8 +30,8 @@
             android:maxLines="1"
             android:hint="Nama"
             android:padding="5dp"
-            android:textColor="@color/color_a400"
-            android:textColorHint="@color/color_a400"
+            android:textColor="@color/color_a200"
+            android:textColorHint="@color/color_a200"
             android:background="@android:color/transparent"/>
         <View
             android:layout_width="1dp"
@@ -46,8 +46,8 @@
             android:hint="No.Hp"
             android:maxLines="1"
             android:padding="5dp"
-            android:textColor="@color/color_a400"
-            android:textColorHint="@color/color_a400"
+            android:textColor="@color/color_a200"
+            android:textColorHint="@color/color_a200"
             android:background="@android:color/transparent" />
     </LinearLayout>
     <EditText
@@ -60,8 +60,8 @@
         android:background="@drawable/field"
         android:padding="5dp"
         android:layout_marginTop="10dp"
-        android:textColor="@color/color_a400"
-        android:textColorHint="@color/color_a400"/>
+        android:textColor="@color/color_a200"
+        android:textColorHint="@color/color_a200"/>
     <EditText
         android:id="@+id/kel"
         android:inputType="text"
@@ -71,8 +71,8 @@
         android:background="@drawable/field"
         android:padding="5dp"
         android:layout_marginTop="10dp"
-        android:textColor="@color/color_a400"
-        android:textColorHint="@color/color_a400"/>
+        android:textColor="@color/color_a200"
+        android:textColorHint="@color/color_a200"/>
     <Spinner
         android:id="@+id/drop_kec"
         android:layout_width="match_parent"
@@ -83,7 +83,7 @@
         android:padding="5dp"
         android:background="@drawable/field"
         android:layout_marginTop="10dp"
-        android:textColor="@color/color_a400"/>
+        android:textColor="@color/color_a200"/>
     <EditText
         android:id="@+id/masalah"
         android:layout_width="match_parent"
@@ -97,14 +97,14 @@
         android:padding="5dp"
         android:background="@drawable/field"
         android:layout_marginTop="10dp"
-        android:textColor="@color/color_a400"
-        android:textColorHint="@color/color_a400"/>
+        android:textColor="@color/color_a200"
+        android:textColorHint="@color/color_a200"/>
     <Button
         android:id="@+id/foto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Unggah Foto"
-        android:textColor="@color/color_a400"
+        android:textColor="@color/color_a200"
         android:background="@drawable/field"
         android:layout_marginTop="10dp"
         android:padding="5dp"/>
