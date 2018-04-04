@@ -116,6 +116,7 @@
         android:layout_marginTop="15dp"
         android:textSize="20sp"
         android:background="@drawable/button_field"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
 </LinearLayout>
 </ScrollView>
