@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Halaman_awal"
+            android:name=".Splashscreen"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -30,6 +30,9 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Admin_webview"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Halaman_awal"
             android:label="@string/app_name"
             android:theme="@style/AppTheme"/>
     </application>
