@@ -32,7 +32,8 @@
             android:padding="5dp"
             android:textColor="@color/color_a200"
             android:textColorHint="@color/color_a200"
-            android:background="@android:color/transparent"/>
+            android:background="@android:color/transparent"
+            android:textSize="15sp"/>
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
@@ -48,7 +49,8 @@
             android:padding="5dp"
             android:textColor="@color/color_a200"
             android:textColorHint="@color/color_a200"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:textSize="15sp"/>
     </LinearLayout>
     <EditText
         android:id="@+id/alamat"
@@ -61,7 +63,8 @@
         android:padding="5dp"
         android:layout_marginTop="10dp"
         android:textColor="@color/color_a200"
-        android:textColorHint="@color/color_a200"/>
+        android:textColorHint="@color/color_a200"
+        android:textSize="15sp"/>
     <EditText
         android:id="@+id/kel"
         android:inputType="text"
@@ -72,7 +75,8 @@
         android:padding="5dp"
         android:layout_marginTop="10dp"
         android:textColor="@color/color_a200"
-        android:textColorHint="@color/color_a200"/>
+        android:textColorHint="@color/color_a200"
+        android:textSize="15sp"/>
     <Spinner
         android:id="@+id/drop_kec"
         android:layout_width="match_parent"
@@ -83,7 +87,9 @@
         android:padding="5dp"
         android:background="@drawable/field"
         android:layout_marginTop="10dp"
-        android:textColor="@color/color_a200"/>
+        android:textColor="@color/color_a200"
+        android:textColorHint="@color/color_a200"
+        android:textSize="15sp"/>
     <EditText
         android:id="@+id/masalah"
         android:layout_width="match_parent"
@@ -98,7 +104,8 @@
         android:background="@drawable/field"
         android:layout_marginTop="10dp"
         android:textColor="@color/color_a200"
-        android:textColorHint="@color/color_a200"/>
+        android:textColorHint="@color/color_a200"
+        android:textSize="15sp"/>
     <Button
         android:id="@+id/foto"
         android:layout_width="match_parent"
@@ -107,14 +114,15 @@
         android:textColor="@color/color_a200"
         android:background="@drawable/field"
         android:layout_marginTop="10dp"
-        android:padding="5dp"/>
+        android:padding="5dp"
+        android:textSize="15sp"/>
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kirim"
         android:layout_marginTop="15dp"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:background="@drawable/button_field"
         android:textColor="@color/white"
         android:layout_marginBottom="10dp"/>
