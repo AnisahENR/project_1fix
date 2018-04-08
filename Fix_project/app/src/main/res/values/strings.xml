@@ -5,10 +5,12 @@
     <string name="kec">Kecamatan</string>
     <string-array name="kecamatan">
         <item>Pilih Kecamatan</item>
-        <item>BUGUL KIDUL</item>
-        <item>GADINGREJO</item>
-        <item>PANGGUNGREJO</item>
-        <item>PURUTREJO</item>
+        <item>Gadingrejo</item>
+        <item>Purworejo</item>
+        <item>Bugulkidul</item>
+        <item>Panggungrejo</item>
+        <!--'Gadingrejo','Purworejo','Bugulkidul','Panggungrejo'-->
 
     </string-array>
+    <string name="title_activity_maps">Map</string>
 </resources>

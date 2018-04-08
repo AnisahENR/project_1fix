@@ -85,7 +85,8 @@
         android:prompt="@string/kec"
         android:inputType="text"
         android:padding="5dp"
-        android:background="@drawable/field"
+        android:background="@drawable/field_3"
+        
         android:layout_marginTop="10dp"
         android:textColor="@color/color_a200"
         android:textColorHint="@color/color_a200"
@@ -117,7 +118,7 @@
         android:padding="5dp"
         android:textSize="15sp"/>
     <Button
-        android:id="@+id/buttonRegister"
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kirim"
