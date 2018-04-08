@@ -58,13 +58,13 @@ public class Form_isian extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
       //  return super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.form_isian, container, false);
-
-    nama =  view.findViewById(R.id.nama);
-    alamat = view.findViewById(R.id.alamat);
-    no_hp = view.findViewById(R.id.no_hp);
-    kel = view.findViewById(R.id.kel);
-    kec = view.findViewById(R.id.drop_kec);
-    masalah =view.findViewById(R.id.masalah);
+        requestPermission();
+        nama =  view.findViewById(R.id.nama);
+        alamat = view.findViewById(R.id.alamat);
+        no_hp = view.findViewById(R.id.no_hp);
+        kel = view.findViewById(R.id.kel);
+        kec = view.findViewById(R.id.drop_kec);
+        masalah =view.findViewById(R.id.masalah);
         alamat.setOnClickListener(mListener);
         view.findViewById(R.id.button).setOnClickListener(mListener);
 
@@ -72,12 +72,13 @@ public class Form_isian extends Fragment {
 //        button1.setOnClickListener(mListener);
      return view;
 }
+// fungsi ini untuk multiple onclick pada fragment
     private final View.OnClickListener mListener = new View.OnClickListener(){
         public void onClick(View v){
 
             switch (v.getId()){
                 case R.id.alamat:
-
+                    //berguna untuk mengalihkan form tadi menuju maps dan menampilkan secara otomatis lokasi terkini
                     PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
 
                     try {
@@ -117,8 +118,6 @@ public class Form_isian extends Fragment {
         titik_1 = getLat;
         titik_2 = getLong;
 
-
-
     }
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -134,6 +133,8 @@ public class Form_isian extends Fragment {
                 break;
         }
     }
+
+    // untuk mengalihkan ke google maps dan mendapatkan latitude dan longitude dr alamat yang dipilih
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -157,10 +158,6 @@ public class Form_isian extends Fragment {
             @Override
             protected String doInBackground(String... params) {
 
-
-                // String NameHolder = nama ;
-//                String EmailHolder = email ;
-
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
 
                 nameValuePairs.add(new BasicNameValuePair("nama", nama));
@@ -172,8 +169,7 @@ public class Form_isian extends Fragment {
                 nameValuePairs.add(new BasicNameValuePair("titik",titik ));
                 nameValuePairs.add(new BasicNameValuePair("titik2",titik2 ));
 
-//                ContentValues values = new ContentValues();
-//                values.put("kecamatan", kec);
+                //fungsi untuk terkoneksi ke database dan mengirimkan data sesuai serverUrl yang didefinisikan
                 try {
                     HttpClient httpClient = new DefaultHttpClient();
 

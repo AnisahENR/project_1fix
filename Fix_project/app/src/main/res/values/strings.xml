@@ -3,7 +3,8 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="kec">Kecamatan</string>
-    <string-array name="kecamatan">
+
+    <string-array name="kecamatan" >
         <item>Pilih Kecamatan</item>
         <item>Gadingrejo</item>
         <item>Purworejo</item>

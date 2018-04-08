@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_a400">
+    android:background="@drawable/field_2">
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
     android:layout_marginTop="10dp"
     android:layout_marginBottom="10dp"
     android:padding="17.5dp"
@@ -57,14 +57,15 @@
         android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Alamat"
+        android:hint="Alamat (Double click for open maps)"
         android:maxLines="1"
         android:background="@drawable/field"
         android:padding="5dp"
         android:layout_marginTop="10dp"
         android:textColor="@color/color_a200"
         android:textColorHint="@color/color_a200"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:tooltipText="Double click for open maps"/>
     <EditText
         android:id="@+id/kel"
         android:inputType="text"
@@ -86,7 +87,7 @@
         android:inputType="text"
         android:padding="5dp"
         android:background="@drawable/field_3"
-        
+
         android:layout_marginTop="10dp"
         android:textColor="@color/color_a200"
         android:textColorHint="@color/color_a200"
@@ -97,7 +98,6 @@
         android:layout_height="wrap_content"
         android:minLines="3"
         android:maxLines="3"
-        android:ems="25"
         android:hint="Ceritakan Masalahmu Disini"
         android:inputType="text|textMultiLine"
         android:gravity="top"
