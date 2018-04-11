@@ -40,7 +40,7 @@ public class Data_usulan extends Fragment {
         webView_1.getSettings().setJavaScriptEnabled(true);
         // memanggil file web yang ada di server
         webView_1.setWebViewClient(new MyBrowser());
-        webView_1.loadUrl("http://majusdad.pasuruankota.go.id/v2/view.php"); //link dari server
+        webView_1.loadUrl("http://sdad.pasuruankota.go.id/v2/view.php"); //link dari server
         return view;
     }
 

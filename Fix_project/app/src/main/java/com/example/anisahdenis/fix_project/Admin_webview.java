@@ -36,7 +36,7 @@ public class Admin_webview extends AppCompatActivity {
         webView_1.getSettings().setJavaScriptEnabled(true);
         webView_1.setWebViewClient(new Admin_webview.MyBrowser());
 
-        webView_1.loadUrl("http://majusdad.pasuruankota.go.id/data_usulan_admin.php");
+        webView_1.loadUrl("http://sdad.pasuruankota.go.id/v2/");
 
     }
 

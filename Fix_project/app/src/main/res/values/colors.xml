@@ -18,4 +18,6 @@
     <color name="semiblack">#FF1F1F1F</color>
     <color name="stroke">#D7D8DA</color>
     <color name="abu_200">#F5F5F5</color>
+    <color name="abu_back">#4d524c</color>
+    <color name="abu2_splash">#524e4e</color>
 </resources>
