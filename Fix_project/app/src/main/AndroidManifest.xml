@@ -12,9 +12,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/untitled_2"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/untitled_2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -29,16 +29,22 @@
         </activity>
         <activity
             android:name=".TabActivity"
-            android:label="@string/app_name"
+            android:label="KIRIM USULAN"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Admin_webview"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme" />
+            android:label="HALAMAN ADMIN"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".Halaman_awal"/>
         <activity
             android:name=".Halaman_awal"
             android:label="@string/app_name"
             android:theme="@style/AppTheme" />
+
+        <activity android:name=".Tentang"
+            android:label="Tentang Apps"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".TabActivity"/>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -49,11 +55,12 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyDLgaNLX4b57u6om5WXGQwdvtr45f0qryI" />
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".TabActivity"></activity>
     </application>
 
 </manifest>

@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
+
+import static java.security.AccessController.getContext;
 
 /**
  * Created by Anisah Denis on 4/5/2018.
@@ -51,11 +54,13 @@ public class Admin_webview extends AppCompatActivity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         //ketika disentuh tombol back
         if ((keyCode == KeyEvent.KEYCODE_BACK) && webView_1.canGoBack()) {
+          //  Toast.makeText(this, "Double click for go to main page", Toast.LENGTH_LONG).show();
             webView_1.goBack(); //method goback(),untuk kembali ke halaman sebelumnya
             return true;
         }
         // Jika tidak ada halaman yang pernah dibuka
         // maka akan keluar dari activity (tutup aplikasi)
+       // Toast.makeText(this, "Double click for go to main page", Toast.LENGTH_LONG).show();
          return super.onKeyDown(keyCode, event);//jika menggunakan activity
        // return onKeyDown(keyCode, event);
     }

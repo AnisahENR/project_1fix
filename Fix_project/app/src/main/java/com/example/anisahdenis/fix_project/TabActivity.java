@@ -1,8 +1,10 @@
 package com.example.anisahdenis.fix_project;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -80,8 +82,11 @@ public class TabActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        // button untuk tentang apps
         if (id == R.id.action_settings) {
-            return true;
+            Intent intent = new Intent(this, Tentang.class);
+            startActivity(intent);
+            return  true;
         }
 
         return super.onOptionsItemSelected(item);

@@ -70,8 +70,8 @@ public class Form_isian extends Fragment {
 
     boolean check = true;
     ImageView imageView;
-    public EditText nama, alamat, no_hp, kel,masalah;
-    public Spinner kec;
+    public EditText nama, alamat, no_hp, masalah;
+    public Spinner kec, kel;
     String nama_1, alamat_1, no_hp_1, kel_1, kec_1, masalah_1, titik_1,titik_2, getLong, getLat;
     public double latitude, longitude;
     public final static int PLACE_PICKER_REQUEST = 1;
@@ -160,7 +160,8 @@ public class Form_isian extends Fragment {
         nama_1 = nama.getText().toString();
         alamat_1 = alamat.getText().toString();
         no_hp_1 = no_hp.getText().toString();
-        kel_1 = kel.getText().toString();
+        kel_1 = kel.getSelectedItem().toString();
+        this.kel.getSelectedItem().toString();
         kec_1 = kec.getSelectedItem().toString();
         this.kec.getSelectedItem().toString();
         masalah_1 = masalah.getText().toString();

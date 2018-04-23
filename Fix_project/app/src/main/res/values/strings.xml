@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Aplikasi SDAD</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">MAJU SDAD</string>
+    <string name="action_settings">Tentang</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="kec">Kecamatan</string>
 
@@ -13,5 +13,51 @@
         <!--'Gadingrejo','Purworejo','Bugulkidul','Panggungrejo'-->
 
     </string-array>
+
+    <string-array name="kelurahan" >
+        <item>Pilih Kelurahan</item>
+        <!--gadingrejo-->
+        <item>Karangketug</item>
+        <item>Gentong</item>
+        <item>Sebani</item>
+        <item>Petahunan</item>
+        <item>Bukir</item>
+        <item>Randusari</item>
+        <item>Krapyakrejo</item>
+        <item>Gadingrejo</item>
+
+        <!--purworejo-->
+        <item>Pohjentrek</item>
+        <item>Wirogunan</item>
+        <item>Tembokrejo</item>
+        <item>Purutrejo</item>
+        <item>Kebonagung</item>
+        <item>Purworejo</item>
+        <item>Sekargadung</item>
+
+        <!--bugulkidul-->
+        <item>Kepel</item>
+        <item>Blandongan</item>
+        <item>Tapaan</item>
+        <item>Bakalan</item>
+        <item>Krampyangan</item>
+        <item>Bugul Kidul</item>
+
+        <!--panggungrejo-->
+        <item>Karanganyar</item>
+        <item>Tambakan</item>
+        <item>Trajeng</item>
+        <item>Bangilan</item>
+        <item>Kebonsari</item>
+        <item>Mayangan</item>
+        <item>Ngemplakrejo</item>
+        <item>Petamanan</item>
+        <item>Pekuncen</item>
+        <item>Bugul Lor</item>
+        <item>Kandangsapi</item>
+        <item>Panggungrejo</item>
+        <item>Mandaranrejo</item>
+    </string-array>
+
     <string name="title_activity_maps">Map</string>
 </resources>

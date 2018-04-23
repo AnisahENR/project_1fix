@@ -1,6 +1,8 @@
 package com.example.anisahdenis.fix_project;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -26,7 +28,15 @@ public class Halaman_awal extends AppCompatActivity implements View.OnClickListe
         button_admin =(Button)findViewById(R.id.admin);
         button_admin.setOnClickListener(this);
         button_rating =(Button) findViewById(R.id.rating);
-        button_admin.setOnClickListener(this);
+        button_rating.setOnClickListener(this);
+    }
+    public static void reviewOnGooglePlay(Activity activity) {
+        final String appPackageName = activity.getPackageName();
+        try {
+            activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+        } catch (android.content.ActivityNotFoundException e) {
+        }
+        activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appPackageName)));
     }
 
 
@@ -45,6 +55,11 @@ public class Halaman_awal extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent2);
                 break;
             case  R.id.rating:
+
+                Uri uril = Uri.parse("market://details?id="+getPackageName());
+                Intent goTomarket = new Intent(Intent.ACTION_VIEW, uril);
+                startActivity(goTomarket);
+               // reviewOnGooglePlay(this); bisa pakai ini
                 break;
         }
     }

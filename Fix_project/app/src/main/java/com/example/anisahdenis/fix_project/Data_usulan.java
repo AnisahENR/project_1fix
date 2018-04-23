@@ -24,9 +24,9 @@ public class Data_usulan extends Fragment {
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.data_usulan, container, false);
+        View view = inflater.inflate(R.layout.rating, container, false);
 
-        webView_1 = (WebView) view.findViewById(R.id.webview);
+        webView_1 = view.findViewById(R.id.webview);
         webView_1.getSettings().setLoadsImagesAutomatically(true);
         webView_1.getSettings().setJavaScriptEnabled(true);
         webView_1.getSettings().setDomStorageEnabled(true);
@@ -39,7 +39,8 @@ public class Data_usulan extends Fragment {
         // digunakan untuk mengaktifkan javascript
         webView_1.getSettings().setJavaScriptEnabled(true);
         // memanggil file web yang ada di server
-        webView_1.setWebViewClient(new MyBrowser());
+        webView_1.setWebViewClient(new WebViewClient()); // untuk membuka url di apps
+      //  webView_1.setWebViewClient(new MyBrowser());
         webView_1.loadUrl("http://sdad.pasuruankota.go.id/v2/view.php"); //link dari server
         return view;
     }
